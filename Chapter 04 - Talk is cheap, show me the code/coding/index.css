@@ -1,0 +1,226 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html{
+	height: 100%;
+	width: 100%;
+}
+body {
+	line-height: 1;
+	background-color: #eceaec;
+	height: 100%;
+	width: 100%;
+	font-family: 'Poppins', sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+#container{
+    background-color: peachpuff;
+	margin: 1rem;
+	padding: 1rem;
+	border-radius: 6px;
+	flex-direction: column;
+	align-items: start;
+	justify-content: start;
+	gap: 25px;
+	min-height: 100vh;
+}
+#heading1 {
+    background: #ac6b31;
+	padding: 10px;
+}
+#heading2 {
+    background: #ac6b31;
+	padding: 10px;
+}
+#heading3 {
+    background: #ac6b31;
+	padding: 10px;
+}
+
+h1,h2,h3,h4,h5{
+	font-weight: bold;
+	text-transform: capitalize;
+}
+h1{
+	font-size: 40px;
+	line-height: 1.4;
+}
+h2 {
+    font-size: 23px;
+    line-height: 1.4;
+    color: #222;
+}
+h3 {
+    color: brown;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+}
+h4 {
+    color: #47210c;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1.2;
+}
+.account-box {
+    padding-right: 1.5rem;
+}
+header{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #1e0e05;
+	padding: 0 3rem;
+}
+.account-box img{
+	width: 35px;
+	height: 35px;
+	object-fit: cover;
+	border-radius: 100%;
+	max-width: 100%;
+}
+.logo-box img{
+	width: 120px;
+	height: auto;
+	max-width: 100%;
+}
+
+/* Colors
+
+Brown #b8553a
+cream #f1e3b5
+dark moss green #415d23
+light green #7c9a79
+grey #bcbbbc
+dark grey #3c3c44
+*/
+.btn{
+	border-radius: 6px;
+	width: max-content;
+	padding: 5px 15px;
+	outline: 0;
+	box-shadow: 0;
+	font-size: 14px;
+	font-weight: 600;
+	transition: all 300ms ease-in-out;
+	cursor: pointer;
+}
+
+.btn-primary{
+	background-color: #fbc001;
+	border: 1px solid #fbc001;
+	color: #47210c;
+}
+.btn-primary:hover{
+	background-color: #47210c;
+	border-color: #47210c;
+	color: #fbc001;
+}
+.btn-secondary{
+	background-color: #415d23;
+	border: 1px solid #415d23;
+	color: #fff;
+}
+
+.search-input{
+	border: 1px solid #bcbbbc;
+	height: 25px;
+	border-radius: 6px;
+	width: 280px;
+	max-width: 100%;
+	transition: all 300ms ease-in-out;
+}
+.search-input:focus{
+	border: 1px solid #ffffff;
+	outline: 0;
+}
+.search-box{
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+
+.header{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px 65px;
+	background-color: #47210c;
+	color: #fbfbfb;
+}
+.nav-items{
+	display: flex;
+	align-items: center;
+	justify-content: end;
+	list-style: none;
+	gap: 15px;
+}
+
+.card {
+    width: 270px;
+    max-width: 100%;
+    border: 1px solid  rgb(0 0 0 / 10%);
+    border-radius: 0 30px;
+    margin: 5px;
+    padding: 0 0 10px;
+    box-shadow: 0 0 20px 0px rgb(0 0 0 / 14%);
+}
+.card img {
+    max-width: 100%;
+    width: 270px;
+    height: 200px;
+    OBJECT-FIT: COVER;
+	border-radius: 0 30px 0 0;
+}
+.restaurant-grid {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 25px;
+    display: grid;
+    padding: 4rem 3.8rem;
+}
+.content{
+	padding: 15px 10px;
+}
