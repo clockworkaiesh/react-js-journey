@@ -1,0 +1,55 @@
+========== useEffect Hook ==========
+-- Use effect hook is a built in react functions which is called after the component is rendered
+-- it takes 2 parameters, callback function and dependency array
+-- if the dependency array is empty, then that means useEffect will be called ONLY ONCE after the initial render
+-- if there is no array at all, then useEffect is not dependenct on anything and then it will be called after every render
+-- you can create as many useEffect as you want or need as per the use case
+
+========== Best practices for the functional components ==========
+-- Never create a functional component inside another functional component (As per React's documentation)
+-- Because the sub component will be called so many times
+
+========== Best practices for Hooks ==========
+-- Never ever write a useState hook inside an if else or inside a for loop
+-- useState hook is a function that React gives you to create local state variables inside functional components and manage their state 
+-- Never use useState hook outside a functional component
+
+========== Best practices for using or installing a node package ==========
+-- Avoid using or installing node packages as much as you can
+-- only use packages for tedious and heavy duty tasks
+-- like if your website has a lot of forms, use a library called Formik (there are a lot of other packages but Formik is open source and great)
+
+========== Routing ==========
+-- To navigate between pages in a React app, you need to create a routing configuration. 
+   STEPS TO CREATE ROUTING configuration
+   1. import createBrowserRouter function from react-router-dom (this function will help us create routing)
+-- Two types of routing:
+    Client side routing -- no going to the server, no making network calls
+    Server side routing -- here all our pages from the server
+
+
+========== SESSION RECAP ==========
+-- we can use multiple useEffects
+-- useState should not be written inside if/else ever
+-- avoid using packages and libraries as much as you can, only import or use them when absolutely necessary and/or for hefty task
+-- formik library is used to make forms and their validations easier
+-- createBrowserRouter is a function used to create routers
+-- createBrowserRouter takes in an array of objects (configuration based on key value pairs), where each object can have a path, element, errorElement, and can also have a children key
+-- 'element' key is used to pass in component name for that route
+-- for errors, 'errorElement' is the key to be used
+-- after making the configuration, you provide it using RouterProvider component in the render
+-- <Outlet/> is the component where you fill in dynamic routes and whatever children we make they go inside the outlet
+-- the hook named useRouteError is used to create the error component
+-- useParamHooks is used to read dynamic IDs 
+-- modular, reusable, cleaner, maintainable, testable
+-- Link component is used in place of anchor tag to get rid of page refresh
+-- 
+-- 
+-- 
+-- 
+-- 
+-- 
+-- 
+-- 
+-- 
+
